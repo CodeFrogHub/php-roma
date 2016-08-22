@@ -25,6 +25,7 @@ class RomaTest extends PHPUnit_Framework_TestCase
         $roma = new Roma($value1);
         $result = $roma->add($value2);
         $this->assertEquals($result->getRoman(), $add);
+        $this->assertFalse($roma === $result);
     }
 
     /**
@@ -40,6 +41,7 @@ class RomaTest extends PHPUnit_Framework_TestCase
         $roma = new Roma($value1);
         $result = $roma->sub($value2);
         $this->assertEquals($result->getRoman(), $sub);
+        $this->assertFalse($roma === $result);
     }
 
     /**
