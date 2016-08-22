@@ -65,7 +65,7 @@ class Roma
 
     public function getRoman()
     {
-        return self::romanize($this->value);
+        return self::romanize($this->getNumber());
     }
 
     public function add($value)
@@ -73,14 +73,14 @@ class Roma
         $value = new Roma($value);
         $value = $value->getNumber();
 
-        return new Roma($this->value + $value);
+        return new Roma($this->getNumber() + $value);
     }
 
     public function sub($value) {
         $value = new Roma($value);
         $value = $value->getNumber();
 
-        return new Roma($this->value - $value);
+        return new Roma($this->getNumber() - $value);
     }
 
     /**
