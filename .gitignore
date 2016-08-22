@@ -1,1 +1,4 @@
 vendor/
+
+# Editor files
+.idea
