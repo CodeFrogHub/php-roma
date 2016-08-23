@@ -2,7 +2,7 @@
 
 utility to work with roma numbers.
 
-
+[![Build Status](https://travis-ci.org/CodeFrogHub/php-roma.svg?branch=master)](https://travis-ci.org/CodeFrogHub/php-roma)
 
 ## FROM PHPUNTI STARTER
 ### Prerequisite
