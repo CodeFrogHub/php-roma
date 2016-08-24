@@ -1,4 +1,5 @@
 vendor/
+build/
 
 # Editor files
 .idea
