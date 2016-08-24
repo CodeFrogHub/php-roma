@@ -1,18 +1,20 @@
 {
-    "require-dev": {
-        "phpunit/phpunit": "^5.1",
-		"satooshi/php-coveralls": "^1.0"
-    },
-
-    "config": {
-      "process-timeout": 600,
-      "preferred-install": "dist",
-      "github-protocols": ["https"]
-    },
-
-    "autoload": {
-      "psr-4": {
-        "": "src/"
-      }
+  "name": "codefrog/roma",
+  "description": "utility to work with roma numbers.",
+  "require-dev": {
+    "phpunit/phpunit": "^5.1",
+    "satooshi/php-coveralls": "^1.0"
+  },
+  "config": {
+    "process-timeout": 600,
+    "preferred-install": "dist",
+    "github-protocols": [
+      "https"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
     }
+  }
 }
