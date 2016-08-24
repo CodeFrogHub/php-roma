@@ -1,6 +1,6 @@
 {
   "name": "codefroghub/roma",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "utility to work with roma numbers.",
   "keywords": ["util","utility", "roma", "numbers"],
   "homepage": "https://github.com/CodeFrogHub/php-roma",
