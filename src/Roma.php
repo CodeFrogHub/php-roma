@@ -22,8 +22,8 @@ class Roma
 
     function __construct($value)
     {
-        $invalidExeption = new InvalidArgumentException(
-            "Paramter for new Roma have to be an positive Integer, a Roma String or an instance of Roma"
+        $invalidException = new InvalidArgumentException(
+            "Parameter for new Roma have to be an positive Integer, a Roma String or an instance of Roma"
         );
         // can be integer
         // can be String
@@ -35,14 +35,14 @@ class Roma
             $codes = self::romanCodes();
             for ($i = 0; $i < strlen($value); $i++) {
                 if (in_array($value[$i], $codes) === false) {
-                    throw $invalidExeption;
+                    throw $invalidException;
                 }
             }
             $this->value = self::deromanize($value);
         } elseif ($value instanceof self) {
             $this->value = $value->getNumber();
         } else {
-            throw $invalidExeption;
+            throw $invalidException;
         }
     }
 
